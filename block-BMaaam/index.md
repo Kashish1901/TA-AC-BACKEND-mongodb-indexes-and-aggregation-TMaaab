@@ -9,7 +9,7 @@ Write aggregation queries to perform following tasks.
 2. Find all users whose name includes `blake` case insensitive.
 
 3. Find all males.
-
+   db.users.aggregate([{$match:{geneder:"male"}}])
 4. Find all active males.
 
 5. Find all active females whose age is >= 25.
